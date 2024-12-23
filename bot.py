@@ -13,7 +13,7 @@ def is_valid_terabox_url(url):
     try:
         parsed = urlparse(url)
         return any(domain in parsed.netloc.lower() 
-                  for domain in ['terabox.com', '1024terabox.com', 'www.terabox.com'])
+                  for domain in ['terabox.app', '1024terabox.com', 'www.terabox.com'])
     except:
         return False
 
